@@ -11,7 +11,6 @@ export class CompareToDirective implements Validator {
   constructor(private element: ElementRef) {}
 
   validate(control: AbstractControl): ValidationErrors | null {
-   console.log( this.appCompareTo.value)
     return control.value == this.appCompareTo.value ? null : {'compareTo': true };
   }
 }
