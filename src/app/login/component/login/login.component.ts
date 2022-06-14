@@ -2,7 +2,7 @@ import { Component, OnInit, } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ImageProfileDialogComponent } from './image-profile-dialog/image-profile-dialog.component';
 import { AbstractControl, FormBuilder, FormControl, FormGroupDirective, Validators } from '@angular/forms';
-import { LoginAnimations } from '../../animations/login.animations.ts'
+import { LoginAnimations } from '../../animations/login.animations'
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
