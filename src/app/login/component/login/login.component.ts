@@ -50,9 +50,7 @@ export class LoginComponent implements OnInit {
   }
 
   resetForm(formDirective: FormGroupDirective) {
-    this.form.reset();
-    this.form.markAsPristine();
-    this.form.markAsUntouched();
+
     this.isSignUp ? this.form.get('name')?.enable() : this.form.get('name')?.disable();
     this.isSignUp ? this.form.get('rPassword')?.enable() : this.form.get('rPassword')?.disable();
     formDirective.resetForm();
